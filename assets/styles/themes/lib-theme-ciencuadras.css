@@ -1,0 +1,837 @@
+:root {
+  --c-lib-tb-font-family: 'Ciencuadras', 'Montserrat', sans-serif;
+
+  --c-lib-tb-primaryD400: #042f4d;
+  --c-lib-tb-primaryD300: #003a5c;
+  --c-lib-tb-primaryD200: #074973;
+  --c-lib-tb-primaryD100: #045586;
+  --c-lib-tb-primaryBase: #006098;
+  --c-lib-tb-primaryL100: #3e98cc;
+  --c-lib-tb-primaryL200: #77c9ff;
+  --c-lib-tb-primaryL300: #c1eaff;
+  --c-lib-tb-primaryL400: #eaf7ff;
+
+  --c-lib-tb-secondaryD400: #df8816;
+  --c-lib-tb-secondaryD300: #ea8d1b;
+  --c-lib-tb-secondaryD200: #f4911f;
+  --c-lib-tb-secondaryD100: #fa9c29;
+  --c-lib-tb-secondaryBase: #ffa533;
+  --c-lib-tb-secondaryL100: #f2a72e;
+  --c-lib-tb-secondaryL200: #f9b732;
+  --c-lib-tb-secondaryL300: #fac65d;
+  --c-lib-tb-secondaryL400: #fbe3b0;
+
+  --c-lib-tb-tertiaryD400: #3e8426;
+  --c-lib-tb-tertiaryD300: #4b9032;
+  --c-lib-tb-tertiaryD200: #579c3d;
+  --c-lib-tb-tertiaryD100: #63a848;
+  --c-lib-tb-tertiaryBase: #6fb453;
+  --c-lib-tb-tertiaryL100: #88ce6b;
+  --c-lib-tb-tertiaryL200: #a0e782;
+  --c-lib-tb-tertiaryL300: #bdf0a6;
+  --c-lib-tb-tertiaryL400: #ddf7d0;
+
+  --c-lib-tb-grayscaleBlack: #1b1b1b;
+  --c-lib-tb-grayscaleD400: #282828;
+  --c-lib-tb-grayscaleD300: #414141;
+  --c-lib-tb-grayscaleD200: #5b5b5b;
+  --c-lib-tb-grayscaleD100: #666666;
+  --c-lib-tb-grayscaleBase: #9b9b9b;
+  --c-lib-tb-grayscaleL100: #b9b9b9;
+  --c-lib-tb-grayscaleL200: #e1e1e1;
+  --c-lib-tb-grayscaleL300: #f5f5f5;
+  --c-lib-tb-grayscaleL400: #fafafa;
+  --c-lib-tb-grayscaleWhite: #ffffff;
+
+  --c-lib-tb-errorD400: #8f2b34;
+  --c-lib-tb-errorD300: #a22d38;
+  --c-lib-tb-errorD200: #b5303d;
+  --c-lib-tb-errorD100: #c93241;
+  --c-lib-tb-errorBase: #dc3545;
+  --c-lib-tb-errorL100: #e7727d;
+  --c-lib-tb-errorL200: #ee9aa2;
+  --c-lib-tb-errorL300: #f5c2c7;
+  --c-lib-tb-errorL400: #fbebec;
+
+  --c-lib-tb-successD400: #236f34;
+  --c-lib-tb-successD300: #247d38;
+  --c-lib-tb-successD200: #258b3d;
+  --c-lib-tb-successD100: #279941;
+  --c-lib-tb-successBase: #28a745;
+  --c-lib-tb-successL100: #69c17d;
+  --c-lib-tb-successL200: #94d3a2;
+  --c-lib-tb-successL300: #bee5c7;
+  --c-lib-tb-successL400: #e9f6ec;
+
+  --c-lib-tb-warningD400: #d6b13d;
+  --c-lib-tb-warningD300: #e0b52e;
+  --c-lib-tb-warningD200: #ebb91f;
+  --c-lib-tb-warningD100: #f5bd0f;
+  --c-lib-tb-warningBase: #ffc100;
+  --c-lib-tb-warningL100: #ffd44d;
+  --c-lib-tb-warningL200: #ffe080;
+  --c-lib-tb-warningL300: #ffecb2;
+  --c-lib-tb-warningL400: #fff9e5;
+
+  --c-lib-tb-infoD400: #0b56a4;
+  --c-lib-tb-infoD300: #0860bb;
+  --c-lib-tb-infoD200: #056ad1;
+  --c-lib-tb-infoD100: #0374e8;
+  --c-lib-tb-infoBase: #007eff;
+  --c-lib-tb-infoL100: #4da5ff;
+  --c-lib-tb-infoL200: #80bfff;
+  --c-lib-tb-infoL300: #b2d8ff;
+  --c-lib-tb-infoL400: #e5f2ff;
+
+  --c-lib-tb-bgGrayscaleBlack: #1b1b1b;
+  --c-lib-tb-bgGrayscaleD100: #666666;
+  --c-lib-tb-bgGrayscaleBase: #9b9b9b;
+  --c-lib-tb-bgGrayscaleL400: #fafafa;
+  --c-lib-tb-bgGrayscaleWhite: #ffffff;
+
+  --c-lib-tb-bgPrimaryD100: #045586;
+  --c-lib-tb-bgPrimaryBase: #006098;
+  --c-lib-tb-bgPrimaryL400: #eaf7ff;
+
+  --c-lib-tb-bgSecondaryD100: #fa9c29;
+  --c-lib-tb-bgSecondaryBase: #ffa533;
+  --c-lib-tb-bgSecondaryL400: #fbe3b0;
+
+  --c-lib-tb-bgTertiaryD100: #63a848;
+  --c-lib-tb-bgTertiaryBase: #6fb453;
+  --c-lib-tb-bgTertiaryL400: #ddf7d0;
+
+  --c-lib-tb-gradientPrimaryD400D200: linear-gradient(224deg, #042f4d 25.42%, #074973 72.29%);
+  --c-lib-tb-gradientPrimaryD200Base: linear-gradient(178deg, #074973 8.46%, #006098 92.31%);
+  --c-lib-tb-gradientPrimaryL200L400: linear-gradient(186deg, #77c9ff 4.73%, #eaf7ff 95.27%);
+
+  --c-lib-tb-gradientSecondaryD400D200: linear-gradient(186deg, #df8816 5.45%, #f4911f 95.52%);
+  --c-lib-tb-gradientSecondaryD200Base: linear-gradient(186deg, #f4911f 6.06%, #ffa533 96.61%);
+  --c-lib-tb-gradientSecondaryL200L400: linear-gradient(186deg, #f9b732 6.2%, #fbe3b0 96.74%);
+
+  --c-lib-tb-gradientTertiaryD400D200: linear-gradient(198deg, #3e8426 12.41%, #579c3d 87.59%);
+  --c-lib-tb-gradientTertiaryD200Base: linear-gradient(186deg, #579c3d 5.02%, #6fb453 95.56%);
+  --c-lib-tb-gradientTertiaryL200L400: linear-gradient(186deg, #a0e782 4.42%, #ddf7d0 94.97%);
+
+  --c-lib-tb-shadowXS: 0px 0px 6px 0px rgba(115, 115, 115, 0.16),
+    0px 2px 4px 0px rgba(115, 115, 115, 0.16);
+  --c-lib-tb-shadowS: 1px 1px 8px 0px rgba(115, 115, 115, 0.16),
+    1px 4px 4px 0px rgba(115, 115, 115, 0.04);
+  --c-lib-tb-shadowM: 2px 2px 16px 0px rgba(115, 115, 115, 0.16),
+    2px 8px 8px 0px rgba(115, 115, 115, 0.04);
+  --c-lib-tb-shadowL: 3px 3px 24px 0px rgba(115, 115, 115, 0.16),
+    3px 12px 8px 0px rgba(115, 115, 115, 0.08);
+  --c-lib-tb-shadowXL: 4px 4px 24px 0px rgba(115, 115, 115, 0.16),
+    3px 12px 16px 0px rgba(115, 115, 115, 0.16);
+
+  /* Headings / Desktop */
+  --c-lib-tb-fontsizeH1: 2.25rem;
+  --c-lib-tb-fontsizeH2: 2rem;
+  --c-lib-tb-fontsizeH3: 1.75rem;
+  --c-lib-tb-fontsizeH4: 1.5rem;
+  --c-lib-tb-fontsizeH5: 1.25rem;
+  --c-lib-tb-fontsizeH6: 1rem;
+
+  /* Headings / Mobile */
+  --c-lib-tb-fontsizeMobileH1: 1.75rem;
+  --c-lib-tb-fontsizeMobileH2: 1.5rem;
+  --c-lib-tb-fontsizeMobileH3: 1.375rem;
+  --c-lib-tb-fontsizeMobileH4: 1.25rem;
+  --c-lib-tb-fontsizeMobileH5: 1.125rem;
+  --c-lib-tb-fontsizeMobileH6: 1rem;
+
+  --c-lib-tb-fontsizeBody: 1rem;
+  --c-lib-tb-fontsizeLabel: 0.875rem;
+  --c-lib-tb-fontsizeCaption: 0.75rem;
+  --c-lib-tb-fontsizeButton: 1rem;
+
+  --c-lib-tb-font-family-h1: 'Montserrat', 'Open Sans', sans-serif;
+  --c-lib-tb-font-family-h2: 'Montserrat', 'Open Sans', sans-serif;
+  --c-lib-tb-font-family-h3: 'Montserrat', 'Open Sans', sans-serif;
+  --c-lib-tb-font-family-h4: 'Montserrat', 'Open Sans', sans-serif;
+  --c-lib-tb-font-family-h5: 'Montserrat', 'Open Sans', sans-serif;
+  --c-lib-tb-font-family-h6: 'Montserrat', 'Open Sans', sans-serif;
+
+  /* BREADCRUMB */
+  --c-lib-tb-breadcrumb-bg-active: transparent;
+  --c-lib-tb-breadcrumb-color-icon-active: var(--c-lib-tb-grayscaleD200);
+  --c-lib-tb-breadcrumb-color-icon-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-breadcrumb-color-icon-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-breadcrumb-color-icon-right: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-breadcrumb-color-icon: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-breadcrumb-color-label-active: var(--c-lib-tb-grayscaleD200);
+  --c-lib-tb-breadcrumb-color-label-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-breadcrumb-color-label-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-breadcrumb-color-label: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-breadcrumb-shadow-focus: 0 0 0 2px var(--c-lib-tb-primaryL200);
+  --c-lib-tb-breadcrumb-text-decoration-hover: underline;
+
+  /* LIST */
+  --c-lib-tb-list-color-icon-active: var(--c-lib-tb-primaryBase);
+
+  /* LISTBOX */
+  --c-lib-tb-listbox-color-icon-active: var(--c-lib-tb-primaryBase);
+
+  /* CHECKBOX */
+  --c-lib-tb-checkbox-bg-box-checked-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-checkbox-bg-box-checked-view: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-checkbox-bg-box-disabled: var(--c-lib-tb-grayscaleL300);
+  --c-lib-tb-checkbox-bg-box-view: var(--c-lib-tb-grayscaleL400);
+  --c-lib-tb-checkbox-border-color-checked-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-checkbox-border-color-checked-view: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-checkbox-border-color-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-checkbox-border-color-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-checkbox-border-color-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-checkbox-border-color-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-checkbox-border-color: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-checkbox-color-label-active: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-checkbox-color-label-view: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-checkbox-color-primary-box-shadow-pressed: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-checkbox-color-secondary-box-shadow-focus: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-checkbox-color-secondary-box-shadow-pressed: var(--c-lib-tb-primaryL400);
+
+  /* CHIP */
+  --c-lib-tb-chip-bg-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-chip-bg-disabled: var(--c-lib-tb-grayscaleL300);
+  --c-lib-tb-chip-bg-focus: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-chip-bg-hover: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-chip-bg-pressed: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-chip-bg: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-chip-border-radius-active: 0.5rem;
+  --c-lib-tb-chip-border-radius-disabled: 0.5rem;
+  --c-lib-tb-chip-border-radius-focus: 0.5rem;
+  --c-lib-tb-chip-border-radius-hover: 0.5rem;
+  --c-lib-tb-chip-border-radius-pressed: 0.5rem;
+  --c-lib-tb-chip-border-radius: 0.5rem;
+  --c-lib-tb-chip-border-width-active: 0;
+  --c-lib-tb-chip-border-width-disabled: 0;
+  --c-lib-tb-chip-border-width-focus: 0;
+  --c-lib-tb-chip-border-width-hover: 0;
+  --c-lib-tb-chip-border-width-pressed: 0;
+  --c-lib-tb-chip-border-width: 0;
+  --c-lib-tb-chip-box-shadow-focus: 0 0 0 1px var(--c-lib-tb-grayscaleWhite),
+    0 0 0 3px var(--c-lib-tb-primaryL100);
+  --c-lib-tb-chip-color-active: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-chip-color-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-chip-color-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-chip-color-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-chip-color-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-chip-color: var(--c-lib-tb-primaryBase);
+
+  /* DROPDOWN */
+  --c-lib-tb-dropdown-color-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-dropdown-color-icon-caption-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-dropdown-color-icon-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-dropdown-color-icon-input-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-dropdown-color-icon-input-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-dropdown-color-icon-input-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-dropdown-color-icon-input: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-dropdown-color-input: var(--c-lib-tb-grayscaleBase);
+
+  /* MULTISELECT DROPDOWN */
+  --c-lib-tb-dropdown-ms-border-radius-chip: 0.5rem;
+  --c-lib-tb-dropdown-ms-color-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-dropdown-ms-color-icon-caption-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-dropdown-ms-color-icon-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-dropdown-ms-color-icon-input-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-dropdown-ms-color-icon-input-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-dropdown-ms-color-icon-input-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-dropdown-ms-color-icon-input: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-dropdown-ms-color-input: var(--c-lib-tb-grayscaleBase);
+
+  /* INDICATOR GALLERY */
+  --c-lib-tb-indicator-gallery-bg-active-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-indicator-gallery-bg-active-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-indicator-gallery-bg-container: var(--c-lib-tb-grayscaleL300);
+  --c-lib-tb-indicator-gallery-bg-hover: var(--c-lib-tb-grayscaleL100);
+
+  /* INPUT NUMBER */
+  --c-lib-tb-input-number-color-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-input-number-color-icon-caption-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-input-number-color-icon-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-input-number-color-input: var(--c-lib-tb-grayscaleBase);
+
+  /* INPUT TEXT */
+  --c-lib-tb-inputtext-color-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-inputtext-color-icon-caption-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-inputtext-color-icon-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-inputtext-color-icon-input-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-inputtext-color-icon-input-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-inputtext-color-icon-input-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-inputtext-color-icon-input: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-inputtext-color-input: var(--c-lib-tb-grayscaleBase);
+
+  /* INPUT TEXT AREA */
+  --c-lib-tb-input-text-area-color-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-input-text-area-color-icon-caption-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-input-text-area-color-icon-caption-success: var(--c-lib-tb-successBase);
+  --c-lib-tb-input-text-area-color-input: var(--c-lib-tb-grayscaleBase);
+
+  /* PROGRESS BAR */
+  --c-lib-tb-progressbar-color-info: var(--c-lib-tb-grayscaleBlack);
+  --c-lib-tb-progressbar-color-success: var(--c-lib-tb-grayscaleBlack);
+
+  /* PROGRESS SPINNER */
+  --c-lib-tb-progress-spinner-color-icon: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-progress-spinner-primary-color: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-progress-spinner-secondary-color: var(--c-lib-tb-primaryD200);
+
+  /* RADIO BUTTON */
+  --c-lib-tb-radiobutton-bg-radio-disabled-selected: var(--c-lib-tb-grayscaleL300);
+  --c-lib-tb-radiobutton-bg-radio-disabled: var(--c-lib-tb-grayscaleL300);
+  --c-lib-tb-radiobutton-border-color-disabled-selected: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-radiobutton-border-color-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-radiobutton-border-color-focus-selected: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-radiobutton-border-color-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-radiobutton-border-color-hover-selected: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-radiobutton-border-color-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-radiobutton-border-color-pressed-selected: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-radiobutton-border-color-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-radiobutton-border-color-selected: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-radiobutton-border-color: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-radiobutton-color-check-hover-selected: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-radiobutton-color-primary-box-shadow-pressed-selected: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-radiobutton-color-primary-box-shadow-pressed: var(--c-lib-tb-primaryL400);
+
+  /* SEARCH */
+  --c-lib-tb-search-color-icon-expanded: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-icon-expanded: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-icon-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-icon-hover: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-icon: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-left-icon-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-left-icon-expanded: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-left-icon-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-left-icon-hover: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-left-icon: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-separator-color-expanded: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-search-separator-style-expanded: solid;
+  --c-lib-tb-search-separator-width-expanded: 0.0625rem;
+
+  /* SLIDER */
+  --c-lib-tb-slider-bg-handle-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-slider-bg-range: var(--c-lib-tb-primaryL100);
+  --c-lib-tb-slider-color-float-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-slider-color-primary-box-shadow-hover: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-slider-color-primary-box-shadow-pressed: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-slider-color-secondary-box-shadow-focus: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-slider-color-secondary-box-shadow-pressed: var(--c-lib-tb-primaryL400);
+
+  /* SWITCH */
+  --c-lib-tb-switch-label: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-switch-bg-bull: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-label-hover: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track-hover: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-switch-bg-bull-hover: var(--c-lib-tb-grayscaleD200);
+  --c-lib-tb-switch-color-box-shadow-hover: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-switch-label-pressed: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track-pressed: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-switch-bg-bull-pressed: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-color-box-shadow-pressed: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-switch-label-focus: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track-focus: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-switch-bg-bull-focus: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-color-box-shadow-focus: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-switch-label-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-switch-bg-track-disabled: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-switch-bg-bull-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-switch-label-error: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track-error: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-switch-label-checked: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track-checked: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-switch-bg-bull-checked: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-switch-label-checked-hover: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track-checked-hover: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-switch-bg-bull-checked-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-switch-color-box-shadow-checked-hover: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-switch-label-checked-pressed: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track-checked-pressed: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-switch-bg-bull-checked-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-switch-color-box-shadow-checked-pressed: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-switch-label-checked-focus: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-switch-bg-track-checked-focus: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-switch-bg-bull-checked-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-switch-color-box-shadow-checked-focus: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-switch-label-checked-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-switch-bg-track-checked-disabled: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-switch-bg-bull-checked-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-switch-label-checked-error: var(--c-lib-tb-grayscaleD100);
+
+  /* TAG */
+  --c-lib-tb-tag-info-color: var(--c-lib-tb-grayscaleBlack);
+  --c-lib-tb-tag-success-color: var(--c-lib-tb-grayscaleBlack);
+
+  /* EMPTY MESSAGE */
+  --c-lib-tb-empty-message-color-icon: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-empty-message-color-title: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-empty-message-color-description: var(--c-lib-tb-grayscaleD400);
+
+  /* ANSWER STATE */
+  --c-lib-tb-answer-state-color-number: var(--c-lib-tb-secondaryBase);
+
+  /* BANNER */
+  --c-lib-tb-banner-bg-box: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-banner-color-description: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-banner-color-title: var(--c-lib-tb-primaryD400);
+
+  /* CALENDAR */
+  --c-lib-tb-calendar-bg-on-active: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-calendar-border-color-item-current-active: var(--c-lib-tb-secondaryL100);
+  --c-lib-tb-calendar-border-color-item-off-active: var(--c-lib-tb-secondaryL100);
+  --c-lib-tb-calendar-color-disabled: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-calendar-color-other: var(--c-lib-tb-grayscaleL100);
+
+  /* CARD */
+  --c-lib-tb-card-color-box-items-icon: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-card-color-box-items-separator: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-card-font-size-box-items-icon: 0.9375rem;
+
+  /* EMPTY STATE */
+  --c-lib-tb-empty-state-icon-color: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-empty-state-title-color: var(--c-lib-tb-grayscaleD100);
+
+  /* UPLOADING FILE */
+  --c-lib-tb-uploading-file-border-color: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-uploading-file-icon-bg: var(--c-lib-tb-grayscaleL300);
+  --c-lib-tb-uploading-file-state-bg: var(--c-lib-tb-grayscaleWhite);
+
+  /* MODAL NOTIFICATION */
+  --c-lib-tb-modal-notification-color-icon-close: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-modal-notification-color-title: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-modal-notification-icon-gradient: var(--c-lib-tb-primaryBase);
+
+  /* ONBOARDING */
+  --c-lib-tb-onboarding-color-title-guide: var(--c-lib-tb-primaryD400);
+  --c-lib-tb-onboarding-color-title-welcome: var(--c-lib-tb-grayscaleD200);
+  --c-lib-tb-onboarding-leitmotiv-primary-color: var(--c-lib-tb-bgPrimaryL400);
+  --c-lib-tb-onboarding-leitmotiv-secondary-color: var(--c-lib-tb-bgPrimaryL400);
+
+  /* PAGINATOR */
+  --c-lib-tb-paginator-border-radius: 0.5rem;
+  --c-lib-tb-paginator-border-width-focus: 0.125rem;
+  --c-lib-tb-paginator-border-width: 0px;
+
+  /* STEPPER */
+  --c-lib-tb-stepper-bg-active: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-stepper-bg-view-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-stepper-bg-view: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-stepper-border-active: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-stepper-border-view-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-stepper-border: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-content-active: var(--c-lib-tb-primaryD400);
+  --c-lib-tb-stepper-content-view-active: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-stepper-content-view: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-stepper-content: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-icon-active: var(--c-lib-tb-primaryD400);
+  --c-lib-tb-stepper-label-view-active: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-label-view: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-label: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-line: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-stepper-mix-background-active: var(--c-lib-tb-primaryD400);
+  --c-lib-tb-stepper-mix-background: var(--c-lib-tb-grayscaleD300);
+
+  /* STEPPER VERTICAL */
+  --c-lib-tb-stepper-vertical-bg-active: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-stepper-vertical-bg-mix-active: var(--c-lib-tb-primaryD400);
+  --c-lib-tb-stepper-vertical-bg-mix-view-active: var(--c-lib-tb-primaryD400);
+  --c-lib-tb-stepper-vertical-bg-mix-view: var(--c-lib-tb-primaryD400);
+  --c-lib-tb-stepper-vertical-bg-mix: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-stepper-vertical-bg-view-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-stepper-vertical-bg-view: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-stepper-vertical-border-color-active: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-stepper-vertical-border-color-view-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-stepper-vertical-border-color-view: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-stepper-vertical-border-color: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-vertical-color-icon-active: var(--c-lib-tb-primaryD400);
+  --c-lib-tb-stepper-vertical-color-icon-view-active: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-stepper-vertical-color-icon-view: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-stepper-vertical-color-icon: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-vertical-color-line: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-stepper-vertical-color-title-view-active: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-vertical-color-title-view: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-vertical-color-title: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-stepper-vertical-font-weight-title-view-active: 400;
+
+  /* TABS */
+  --c-lib-tb-tabs-bg-button-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-bg-button-focus: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-tabs-bg-button-hover: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-tabs-bg-button-pressed: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-tabs-bg-button: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-tabs-bg-folder-active: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-tabs-bg-folder-focus: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-tabs-bg-folder-hover: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-tabs-bg-pressed: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-tabs-bg-track-active: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-tabs-bg-track-focus: var(--c-lib-tb-secondaryL400);
+  --c-lib-tb-tabs-bg-track-hover: var(--c-lib-tb-grayscaleL400);
+  --c-lib-tb-tabs-bg: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-tabs-border-color-button-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-border-color-button-hover: var(--c-lib-tb-primaryL300);
+  --c-lib-tb-tabs-border-color-button-pressed: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-tabs-border-color-button: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-tabs-border-color-focus: var(--c-lib-tb-primaryL100);
+  --c-lib-tb-tabs-border-color-folder-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-border-color-hover: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-tabs-border-color-pressed: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-tabs-border-color-track-active: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-tabs-border-color-track-focus: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-tabs-border-color: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-tabs-border-width-button-focus: 0.125rem;
+  --c-lib-tb-tabs-border-width-button: 0.125rem;
+  --c-lib-tb-tabs-border-width-folder-focus: 0.0625rem;
+  --c-lib-tb-tabs-border-width-folder: 0.0625rem;
+  --c-lib-tb-tabs-box-shadow-folder-focus: inset 0.0313rem 0.0313rem 0 0.0313rem
+      var(--c-lib-tb-primaryL100),
+    inset -0.0313rem 0.0313rem 0 0.0313rem var(--c-lib-tb-primaryL100);
+  --c-lib-tb-tabs-color-description-active: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-description-button-active: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-tabs-color-description-button-focus: var(--c-lib-tb-primaryL100);
+  --c-lib-tb-tabs-color-description-button-hover: var(--c-lib-tb-primaryD100);
+  --c-lib-tb-tabs-color-description-button-pressed: var(--c-lib-tb-primaryD100);
+  --c-lib-tb-tabs-color-description-button: var(--c-lib-tb-primaryD100);
+  --c-lib-tb-tabs-color-description-focus: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-description-folder-hover: var(--c-lib-tb-grayscaleBlack);
+  --c-lib-tb-tabs-color-description-pressed: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-description-track-hover: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-description: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-icon-button-active: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-tabs-color-icon-button-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-icon-button-hover: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-icon-button-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-icon-button: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-icon-folder-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-icon-folder-focus: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-tabs-color-icon-folder-hover: var(--c-lib-tb-grayscaleBlack);
+  --c-lib-tb-tabs-color-icon-pressed: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-icon-track-active: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-icon-track-focus: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-icon-track-hover: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-icon: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-title-button-active: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-tabs-color-title-button-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-title-button-hover: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-title-button-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-title-button: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-title-folder-active: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-tabs-color-title-folder-focus: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-tabs-color-title-folder-hover: var(--c-lib-tb-grayscaleBlack);
+  --c-lib-tb-tabs-color-title-pressed: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-title-track-active: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-title-track-focus: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-title-track-hover: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-tabs-color-title: var(--c-lib-tb-grayscaleD300);
+
+  /* MAP */
+  --c-lib-tb-map-bg-stroke-btn-disabled-hover-primary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-disabled-hover-secondary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-disabled-hover-tertiary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-disabled-primary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-disabled-secondary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-disabled-tertiary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-focus-primary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-focus-secondary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-focus-tertiary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-hover-primary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-hover-secondary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-hover-tertiary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-pressed-primary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-pressed-secondary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-pressed-tertiary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-primary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-secondary: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-map-bg-stroke-btn-tertiary: var(--c-lib-tb-grayscaleWhite);
+
+  /* TABLE */
+  --c-lib-tb-table-header-separator-color: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-table-bg-active: var(--c-lib-tb-primaryL400);
+}
+
+/* BUTTON */
+.lib-tb-button {
+  --c-lib-tb-btn-border-radius: 0.5rem;
+}
+
+.lib-tb-button__only-icon {
+  --c-lib-tb-btn-border-radius: 3.125rem;
+}
+
+.lib-tb-button__primary {
+  /* DEFAULT */
+  --c-lib-tb-btn-bg: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-color: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-border-width: 1px;
+  --c-lib-tb-btn-border-color: var(--c-lib-tb-primaryBase);
+
+  /* HOVER */
+  --c-lib-tb-btn-bg-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-btn-color-hover: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-border-width-hover: 1px;
+  --c-lib-tb-btn-border-color-hover: var(--c-lib-tb-primaryD200);
+
+  /* PRESSED */
+  --c-lib-tb-btn-bg-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-color-pressed: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-border-width-pressed: 1px;
+  --c-lib-tb-btn-border-color-pressed: var(--c-lib-tb-primaryBase);
+
+  /* FOCUS */
+  --c-lib-tb-btn-bg-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-color-focus: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-border-width-focus: 1px;
+  --c-lib-tb-btn-border-color-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-box-shadow-focus: 0 0 0 1px #ffffff, 0 0 0 3px var(--c-lib-tb-primaryL200);
+
+  /* DISABLED */
+  --c-lib-tb-btn-bg-disabled: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-btn-color-disabled: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-btn-border-width-disabled: 1px;
+  --c-lib-tb-btn-border-color-disabled: var(--c-lib-tb-grayscaleL200);
+
+  /* DISABLED - HOVER  */
+  --c-lib-tb-btn-bg-disabled-hover: var(--c-lib-tb-grayscaleL100);
+  --c-lib-tb-btn-color-disabled-hover: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-btn-border-width-disabled-hover: 1px;
+  --c-lib-tb-btn-border-color-disabled-hover: var(--c-lib-tb-grayscaleL100);
+}
+
+/* BUTTON - STROKE */
+.lib-tb-button__primary.lib-tb-button__stroke {
+  /* DEFAULT */
+  --c-lib-tb-btn-bg: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-border-width: 1px;
+  --c-lib-tb-btn-border-color: var(--c-lib-tb-primaryBase);
+
+  /* HOVER */
+  --c-lib-tb-btn-bg-hover: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-btn-color-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-btn-border-width-hover: 1px;
+  --c-lib-tb-btn-border-color-hover: var(--c-lib-tb-primaryD200);
+
+  /* PRESSED */
+  --c-lib-tb-btn-bg-pressed: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-border-width-pressed: 1px;
+  --c-lib-tb-btn-border-color-pressed: var(--c-lib-tb-primaryBase);
+
+  /* FOCUS */
+  --c-lib-tb-btn-bg-focus: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-border-width-focus: 1px;
+  --c-lib-tb-btn-border-color-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-box-shadow-focus: 0 0 0 1px #ffffff, 0 0 0 3px var(--c-lib-tb-primaryL200);
+
+  /* DISABLED */
+  --c-lib-tb-btn-bg-disabled: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color-disabled: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-btn-border-width-disabled: 1px;
+  --c-lib-tb-btn-border-color-disabled: var(--c-lib-tb-grayscaleD100);
+
+  /* DISABLED - HOVER  */
+  --c-lib-tb-btn-bg-disabled-hover: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color-disabled-hover: var(--c-lib-tb-grayscaleD200);
+  --c-lib-tb-btn-border-width-disabled-hover: 1px;
+  --c-lib-tb-btn-border-color-disabled-hover: var(--c-lib-tb-grayscaleD200);
+}
+
+/* BUTTON - TEXT */
+.lib-tb-button__primary.lib-tb-button__text {
+  /* DEFAULT */
+  --c-lib-tb-btn-bg: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-border-width: 1px;
+  --c-lib-tb-btn-border-color: var(--c-lib-tb-grayscaleWhite);
+
+  /* HOVER */
+  --c-lib-tb-btn-bg-hover: var(--c-lib-tb-primaryL400);
+  --c-lib-tb-btn-color-hover: var(--c-lib-tb-primaryD200);
+  --c-lib-tb-btn-border-width-hover: 1px;
+  --c-lib-tb-btn-border-color-hover: var(--c-lib-tb-primaryL400);
+
+  /* PRESSED */
+  --c-lib-tb-btn-bg-pressed: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color-pressed: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-border-width-pressed: 1px;
+  --c-lib-tb-btn-border-color-pressed: var(--c-lib-tb-grayscaleWhite);
+
+  /* FOCUS */
+  --c-lib-tb-btn-bg-focus: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color-focus: var(--c-lib-tb-primaryBase);
+  --c-lib-tb-btn-border-width-focus: 1px;
+  --c-lib-tb-btn-border-color-focus: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-box-shadow-focus: 0 0 0 1px #ffffff, 0 0 0 3px var(--c-lib-tb-primaryL200);
+
+  /* DISABLED */
+  --c-lib-tb-btn-bg-disabled: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color-disabled: var(--c-lib-tb-grayscaleD200);
+  --c-lib-tb-btn-border-width-disabled: 1px;
+  --c-lib-tb-btn-border-color-disabled: var(--c-lib-tb-grayscaleWhite);
+
+  /* DISABLED - HOVER  */
+  --c-lib-tb-btn-bg-disabled-hover: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-color-disabled-hover: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-btn-border-width-disabled-hover: 1px;
+  --c-lib-tb-btn-border-color-disabled-hover: var(--c-lib-tb-grayscaleWhite);
+}
+
+/* BUTTON SECONDARY */
+.lib-tb-button__secondary {
+  /* DEFAULT */
+  --c-lib-tb-btn-bg: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-color: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-btn-border-width: 1px;
+  --c-lib-tb-btn-border-color: var(--c-lib-tb-secondaryBase);
+
+  /* HOVER */
+  --c-lib-tb-btn-bg-hover: var(--c-lib-tb-secondaryD100);
+  --c-lib-tb-btn-color-hover: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-btn-border-width-hover: 1px;
+  --c-lib-tb-btn-border-color-hover: var(--c-lib-tb-secondaryD100);
+
+  /* PRESSED */
+  --c-lib-tb-btn-bg-pressed: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-color-pressed: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-btn-border-width-pressed: 1px;
+  --c-lib-tb-btn-border-color-pressed: var(--c-lib-tb-secondaryBase);
+
+  /* FOCUS */
+  --c-lib-tb-btn-bg-focus: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-color-focus: var(--c-lib-tb-grayscaleD400);
+  --c-lib-tb-btn-border-width-focus: 1px;
+  --c-lib-tb-btn-border-color-focus: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-box-shadow-focus: 0 0 0 1px #ffffff, 0 0 0 3px var(--c-lib-tb-secondaryL100);
+
+  /* DISABLED */
+  --c-lib-tb-btn-bg-disabled: var(--c-lib-tb-grayscaleL300);
+  --c-lib-tb-btn-color-disabled: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-btn-border-width-disabled: 1px;
+  --c-lib-tb-btn-border-color-disabled: var(--c-lib-tb-grayscaleL300);
+
+  /* DISABLED - HOVER  */
+  --c-lib-tb-btn-bg-disabled-hover: var(--c-lib-tb-grayscaleL200);
+  --c-lib-tb-btn-color-disabled-hover: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-btn-border-width-disabled-hover: 1px;
+  --c-lib-tb-btn-border-color-disabled-hover: var(--c-lib-tb-grayscaleL200);
+}
+
+/* BUTTON SECONDARY - STROKE */
+.lib-tb-button__secondary.lib-tb-button__stroke {
+  /* DEFAULT */
+  --c-lib-tb-btn-bg: transparent;
+  --c-lib-tb-btn-color: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-border-width: 1px;
+  --c-lib-tb-btn-border-color: var(--c-lib-tb-secondaryBase);
+
+  /* HOVER */
+  --c-lib-tb-btn-bg-hover: transparent;
+  --c-lib-tb-btn-color-hover: var(--c-lib-tb-secondaryD200);
+  --c-lib-tb-btn-border-width-hover: 1px;
+  --c-lib-tb-btn-border-color-hover: var(--c-lib-tb-secondaryD200);
+
+  /* PRESSED */
+  --c-lib-tb-btn-bg-pressed: transparent;
+  --c-lib-tb-btn-color-pressed: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-border-width-pressed: 1px;
+  --c-lib-tb-btn-border-color-pressed: var(--c-lib-tb-secondaryBase);
+
+  /* FOCUS */
+  --c-lib-tb-btn-bg-focus: transparent;
+  --c-lib-tb-btn-color-focus: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-border-width-focus: 1px;
+  --c-lib-tb-btn-border-color-focus: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-box-shadow-focus: 0 0 0 1px #ffffff, 0 0 0 3px var(--c-lib-tb-secondaryL100);
+
+  /* DISABLED */
+  --c-lib-tb-btn-bg-disabled: transparent;
+  --c-lib-tb-btn-color-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-btn-border-width-disabled: 1px;
+  --c-lib-tb-btn-border-color-disabled: var(--c-lib-tb-grayscaleBase);
+
+  /* DISABLED - HOVER  */
+  --c-lib-tb-btn-bg-disabled-hover: transparent;
+  --c-lib-tb-btn-color-disabled-hover: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-btn-border-width-disabled-hover: 1px;
+  --c-lib-tb-btn-border-color-disabled-hover: var(--c-lib-tb-grayscaleD100);
+}
+
+/* BUTTON SECONDARY - TEXT */
+.lib-tb-button__secondary.lib-tb-button__text {
+  /* DEFAULT */
+  --c-lib-tb-btn-bg: transparent;
+  --c-lib-tb-btn-color: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-border-width: 1px;
+  --c-lib-tb-btn-border-color: transparent;
+
+  /* HOVER */
+  --c-lib-tb-btn-bg-hover: transparent;
+  --c-lib-tb-btn-color-hover: var(--c-lib-tb-secondaryD200);
+  --c-lib-tb-btn-border-width-hover: 1px;
+  --c-lib-tb-btn-border-color-hover: transparent;
+
+  /* PRESSED */
+  --c-lib-tb-btn-bg-pressed: transparent;
+  --c-lib-tb-btn-color-pressed: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-border-width-pressed: 1px;
+  --c-lib-tb-btn-border-color-pressed: transparent;
+
+  /* FOCUS */
+  --c-lib-tb-btn-bg-focus: transparent;
+  --c-lib-tb-btn-color-focus: var(--c-lib-tb-secondaryBase);
+  --c-lib-tb-btn-border-width-focus: 1px;
+  --c-lib-tb-btn-border-color-focus: transparent;
+  --c-lib-tb-btn-box-shadow-focus: 0 0 0 1px #ffffff, 0 0 0 3px var(--c-lib-tb-secondaryL100);
+
+  /* DISABLED */
+  --c-lib-tb-btn-bg-disabled: transparent;
+  --c-lib-tb-btn-color-disabled: var(--c-lib-tb-grayscaleBase);
+  --c-lib-tb-btn-border-width-disabled: 1px;
+  --c-lib-tb-btn-border-color-disabled: transparent;
+
+  /* DISABLED - HOVER  */
+  --c-lib-tb-btn-bg-disabled-hover: transparent;
+  --c-lib-tb-btn-color-disabled-hover: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-btn-border-width-disabled-hover: 1px;
+  --c-lib-tb-btn-border-color-disabled-hover: transparent;
+}
+
+/* BUTTON TERTIARY */
+.lib-tb-button__tertiary {
+  /* DEFAULT */
+  --c-lib-tb-btn-bg: var(--c-lib-tb-tertiaryBase);
+  --c-lib-tb-btn-color: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-border-width: 1px;
+  --c-lib-tb-btn-border-color: var(--c-lib-tb-tertiaryBase);
+
+  /* HOVER */
+  --c-lib-tb-btn-bg-hover: var(--c-lib-tb-tertiaryD200);
+  --c-lib-tb-btn-color-hover: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-border-width-hover: 1px;
+  --c-lib-tb-btn-border-color-hover: var(--c-lib-tb-tertiaryD200);
+
+  /* PRESSED */
+  --c-lib-tb-btn-bg-pressed: var(--c-lib-tb-tertiaryBase);
+  --c-lib-tb-btn-color-pressed: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-border-width-pressed: 1px;
+  --c-lib-tb-btn-border-color-pressed: var(--c-lib-tb-tertiaryBase);
+
+  /* FOCUS */
+  --c-lib-tb-btn-bg-focus: var(--c-lib-tb-tertiaryBase);
+  --c-lib-tb-btn-color-focus: var(--c-lib-tb-grayscaleWhite);
+  --c-lib-tb-btn-border-width-focus: 1px;
+  --c-lib-tb-btn-border-color-focus: var(--c-lib-tb-tertiaryBase);
+  --c-lib-tb-btn-box-shadow-focus: 0 0 0 1px #ffffff, 0 0 0 3px var(--c-lib-tb-tertiaryL100);
+
+  /* DISABLED */
+  --c-lib-tb-btn-bg-disabled: var(--c-lib-tb-grayscaleL400);
+  --c-lib-tb-btn-color-disabled: var(--c-lib-tb-grayscaleD100);
+  --c-lib-tb-btn-border-width-disabled: 1px;
+  --c-lib-tb-btn-border-color-disabled: var(--c-lib-tb-grayscaleL400);
+
+  /* DISABLED - HOVER  */
+  --c-lib-tb-btn-bg-disabled-hover: var(--c-lib-tb-grayscaleL300);
+  --c-lib-tb-btn-color-disabled-hover: var(--c-lib-tb-grayscaleD300);
+  --c-lib-tb-btn-border-width-disabled-hover: 1px;
+  --c-lib-tb-btn-border-color-disabled-hover: var(--c-lib-tb-grayscaleL300);
+}

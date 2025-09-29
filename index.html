@@ -1,0 +1,461 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Platform</title>
+    <link rel="stylesheet" href="assets/styles/primeng.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/themes/lib-theme-davivienda.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/lib-styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/lib-theme.css" />    
+    <script src="https://kit.fontawesome.com/bfe8a34919.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <lib-tb-input-text-element id="input-1"></lib-tb-input-text-element>
+    <lib-tb-password-meter-element id="password-meter-1"></lib-tb-password-meter-element>
+    <lib-tb-calendar-element id="calendar-1"></lib-tb-calendar-element>
+    <div class="d-flex">
+      <lib-tb-radio-button-element id="radio-1"></lib-tb-radio-button-element>
+      <lib-tb-radio-button-element id="radio-2"></lib-tb-radio-button-element>
+    </div>
+    <lib-tb-input-text-area-element id="text-area-1"></lib-tb-input-text-area-element>
+    <lib-tb-button-element id="btn-1"></lib-tb-button-element>
+    
+    <!-- Badge Examples -->
+    <div style="margin: 20px 0; position: relative;">
+      <h3>Badge Examples:</h3>
+      <div style="position: relative; display: inline-block; margin: 10px;">
+        <lib-tb-badge-element id="badge-1"></lib-tb-badge-element>
+      </div>
+      <div style="position: relative; display: inline-block; margin: 10px;">
+        <lib-tb-badge-element id="badge-2"></lib-tb-badge-element>
+      </div>
+      <div style="position: relative; display: inline-block; margin: 10px;">
+        <lib-tb-badge-element id="badge-3"></lib-tb-badge-element>
+      </div>
+      <div style="position: relative; display: inline-block; margin: 10px;">
+        <lib-tb-badge-element id="badge-4"></lib-tb-badge-element>
+      </div>
+    </div>
+
+    <!-- Alert Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Alert Examples:</h3>
+      
+      <!-- Alert Fixed Examples -->
+      <div style="margin: 10px 0;">
+        <h4>Fixed Alerts:</h4>
+        <lib-tb-alert-element id="alert-fixed-info" style="margin: 5px 0;"></lib-tb-alert-element>
+        <lib-tb-alert-element id="alert-fixed-success" style="margin: 5px 0;"></lib-tb-alert-element>
+        <lib-tb-alert-element id="alert-fixed-warning" style="margin: 5px 0;"></lib-tb-alert-element>
+        <lib-tb-alert-element id="alert-fixed-error" style="margin: 5px 0;"></lib-tb-alert-element>
+      </div>
+      
+      <!-- Alert Float Example -->
+      <div style="margin: 10px 0;">
+        <h4>Float Alert:</h4>
+        <lib-tb-alert-element id="alert-float"></lib-tb-alert-element>
+        <button onclick="window.showFloatAlert()" style="padding: 10px 20px; margin: 5px;">Mostrar Alert Flotante</button>
+      </div>
+    </div>
+
+    <!-- Avatar Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Avatar Examples:</h3>
+      <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="text-align: center;">
+          <lib-tb-avatar-element id="avatar-1"></lib-tb-avatar-element>
+          <p style="margin: 5px 0; font-size: 12px;">Complete (xlarge)</p>
+        </div>
+        <div style="text-align: center;">
+          <lib-tb-avatar-element id="avatar-2"></lib-tb-avatar-element>
+          <p style="margin: 5px 0; font-size: 12px;">Label (large)</p>
+        </div>
+        <div style="text-align: center;">
+          <lib-tb-avatar-element id="avatar-3"></lib-tb-avatar-element>
+          <p style="margin: 5px 0; font-size: 12px;">Icon (small)</p>
+        </div>
+        <div style="text-align: center;">
+          <lib-tb-avatar-element id="avatar-4"></lib-tb-avatar-element>
+          <p style="margin: 5px 0; font-size: 12px;">Image (large)</p>
+        </div>
+        <div style="text-align: center;">
+          <lib-tb-avatar-element id="avatar-5"></lib-tb-avatar-element>
+          <p style="margin: 5px 0; font-size: 12px;">With Button (xlarge)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breadcrumb Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Breadcrumb Examples:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px;">
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">Basic Breadcrumb:</h4>
+          <lib-tb-breadcrumb-element id="breadcrumb-1"></lib-tb-breadcrumb-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">With Custom Icons:</h4>
+          <lib-tb-breadcrumb-element id="breadcrumb-2"></lib-tb-breadcrumb-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">Simple (No Icons):</h4>
+          <lib-tb-breadcrumb-element id="breadcrumb-3"></lib-tb-breadcrumb-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">Navigation with URLs:</h4>
+          <lib-tb-breadcrumb-element id="breadcrumb-4"></lib-tb-breadcrumb-element>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Button Examples:</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-primary"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Primary Fill</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-secondary"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Secondary + Icon</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-tertiary"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Tertiary Stroke</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-error"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Error</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-text"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Text Style</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-loading"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Loading Animated</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-loading-static"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Loading Static</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-disabled"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Disabled</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-icon-only"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Icon Only</small>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <lib-tb-button-element id="button-advanced"></lib-tb-button-element>
+          <small style="margin-top: 5px; color: #666;">Advanced</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkbox Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Checkbox Examples:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+          <div style="display: flex; flex-direction: column;">
+            <h4 style="margin: 5px 0; font-size: 14px; color: #666;">Basic & States:</h4>
+            <lib-tb-checkbox-element id="checkbox-basic"></lib-tb-checkbox-element>
+            <lib-tb-checkbox-element id="checkbox-binary"></lib-tb-checkbox-element>
+            <lib-tb-checkbox-element id="checkbox-icon"></lib-tb-checkbox-element>
+            <lib-tb-checkbox-element id="checkbox-disabled"></lib-tb-checkbox-element>
+            <lib-tb-checkbox-element id="checkbox-error"></lib-tb-checkbox-element>
+            <lib-tb-checkbox-element id="checkbox-view"></lib-tb-checkbox-element>
+            <lib-tb-checkbox-element id="checkbox-advanced"></lib-tb-checkbox-element>
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <h4 style="margin: 5px 0; font-size: 14px; color: #666;">Multiple Group (Hobbies):</h4>
+            <lib-tb-checkbox-element id="checkbox-multiple-1"></lib-tb-checkbox-element>
+            <lib-tb-checkbox-element id="checkbox-multiple-2"></lib-tb-checkbox-element>
+            <lib-tb-checkbox-element id="checkbox-multiple-3"></lib-tb-checkbox-element>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chip Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Chip Examples:</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+        <lib-tb-chip-element id="chip-basic"></lib-tb-chip-element>
+        <lib-tb-chip-element id="chip-image"></lib-tb-chip-element>
+        <lib-tb-chip-element id="chip-icon"></lib-tb-chip-element>
+        <lib-tb-chip-element id="chip-removable"></lib-tb-chip-element>
+        <lib-tb-chip-element id="chip-active"></lib-tb-chip-element>
+        <lib-tb-chip-element id="chip-disabled"></lib-tb-chip-element>
+        <lib-tb-chip-element id="chip-advanced"></lib-tb-chip-element>
+        <lib-tb-chip-element id="chip-simple"></lib-tb-chip-element>
+      </div>
+      <div style="margin-top: 10px;">
+        <small style="color: #666;">
+          <i class="fas fa-info-circle"></i> 
+          Los chips con imagen usan la misma imagen del avatar. Los chips removibles pueden eliminarse haciendo clic en la X.
+        </small>
+      </div>
+    </div>
+
+    <!-- Dropdown Multi Select Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Dropdown Multi Select Examples:</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">1. Básico:</h4>
+          <lib-tb-dropdown-multi-select-element id="dropdown-multi-basic"></lib-tb-dropdown-multi-select-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">2. Con Chips:</h4>
+          <lib-tb-dropdown-multi-select-element id="dropdown-multi-chips"></lib-tb-dropdown-multi-select-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">3. Agrupado:</h4>
+          <lib-tb-dropdown-multi-select-element id="dropdown-multi-group"></lib-tb-dropdown-multi-select-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">4. Con Filtro:</h4>
+          <lib-tb-dropdown-multi-select-element id="dropdown-multi-filter"></lib-tb-dropdown-multi-select-element>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Text Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Input Text Examples:</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">1. Básico:</h4>
+          <lib-tb-input-text-element id="input-text-basic"></lib-tb-input-text-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">2. Multiline:</h4>
+          <lib-tb-input-text-element id="input-text-multiline"></lib-tb-input-text-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">3. Con Suggestion:</h4>
+          <lib-tb-input-text-element id="input-text-suggestion"></lib-tb-input-text-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">4. Avanzado:</h4>
+          <lib-tb-input-text-element id="input-text-advanced"></lib-tb-input-text-element>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Bar Example -->
+    <div style="margin: 20px 0;">
+      <h3>Progress Bar Example:</h3>
+      <div style="max-width: 400px;">
+        <h4 style="margin: 5px 0; font-size: 14px; color: #666;">Progreso Completo:</h4>
+        <lib-tb-progress-bar-element id="progress-bar-1"></lib-tb-progress-bar-element>
+      </div>
+    </div>
+
+    <!-- Progress Spinner Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Progress Spinner Examples:</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">1. Básico:</h4>
+          <lib-tb-progress-spinner-element id="progress-spinner-basic"></lib-tb-progress-spinner-element>
+        </div>
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">2. Integrado:</h4>
+          <lib-tb-progress-spinner-element id="progress-spinner-integrated"></lib-tb-progress-spinner-element>
+        </div>
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">3. Infinito:</h4>
+          <lib-tb-progress-spinner-element id="progress-spinner-infinite"></lib-tb-progress-spinner-element>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skeleton Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Skeleton Examples:</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">1. Circular:</h4>
+          <lib-tb-skeleton-element id="skeleton-circular"></lib-tb-skeleton-element>
+        </div>
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">2. Redondeado:</h4>
+          <lib-tb-skeleton-element id="skeleton-rounded"></lib-tb-skeleton-element>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Slider Examples:</h3>
+      <div style="display: flex; flex-direction: column; gap: 30px; max-width: 400px;">
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">1. Horizontal Normal:</h4>
+          <lib-tb-slider-element id="slider-horizontal"></lib-tb-slider-element>
+        </div>
+        <div>
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">2. Horizontal Rango:</h4>
+          <lib-tb-slider-element id="slider-range"></lib-tb-slider-element>
+        </div>
+      </div>
+    </div>
+
+    <!-- Snackbar Example -->
+    <div style="margin: 20px 0;">
+      <h3>Snackbar Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 400px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Haz clic en el botón para mostrar una notificación snackbar:
+        </p>
+        <lib-tb-button-element id="snackbar-trigger-button"></lib-tb-button-element>
+        
+        <!-- El snackbar se posicionará automáticamente según su configuración -->
+        <lib-tb-snackbar-element id="snackbar-1"></lib-tb-snackbar-element>
+      </div>
+    </div>
+
+    <!-- Switch Example -->
+    <div style="margin: 20px 0;">
+      <h3>Switch Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 400px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Usa el switch para activar/desactivar el modo oscuro:
+        </p>
+        <lib-tb-switch-element id="switch-1"></lib-tb-switch-element>
+      </div>
+    </div>
+
+    <!-- Tag Examples -->
+    <div style="margin: 20px 0;">
+      <h3>Tag Examples:</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px; max-width: 600px;">
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">1. Info:</h4>
+          <lib-tb-tag-element id="tag-info"></lib-tb-tag-element>
+        </div>
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">2. Warning:</h4>
+          <lib-tb-tag-element id="tag-warning"></lib-tb-tag-element>
+        </div>
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">3. Error:</h4>
+          <lib-tb-tag-element id="tag-error"></lib-tb-tag-element>
+        </div>
+        <div style="text-align: center;">
+          <h4 style="margin: 5px 0; font-size: 14px; color: #666;">4. Success:</h4>
+          <lib-tb-tag-element id="tag-success"></lib-tb-tag-element>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Example -->
+    <div style="margin: 20px 0;">
+      <h3>Search Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 500px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Busca tecnologías (JavaScript, React, Python, etc.) - mínimo 2 caracteres:
+        </p>
+        <lib-tb-search-element id="search-1"></lib-tb-search-element>
+      </div>
+    </div>
+
+    <!-- Dropdown Example -->
+    <div style="margin: 20px 0;">
+      <h3>Dropdown Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 400px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Selecciona un país de la lista (incluye filtrado y validación):
+        </p>
+        <lib-tb-dropdown-element id="dropdown-1"></lib-tb-dropdown-element>
+      </div>
+    </div>
+
+    <!-- Indicator Gallery Example -->
+    <div style="margin: 20px 0;">
+      <h3>Indicator Gallery Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 600px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Galería de productos con autoplay (3 segundos) y control manual:
+        </p>
+        <lib-tb-indicator-gallery-element id="indicator-gallery-1"></lib-tb-indicator-gallery-element>
+      </div>
+    </div>
+
+    <!-- Input Number Example -->
+    <div style="margin: 20px 0;">
+      <h3>Input Number Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 300px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Campo numérico con botones de incremento/decremento (rango: 1-100):
+        </p>
+        <lib-tb-input-number-element id="input-number-1"></lib-tb-input-number-element>
+      </div>
+    </div>
+
+    <!-- Stepper Progress Bar Example -->
+    <div style="margin: 20px 0;">
+      <h3>Stepper Progress Bar Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 800px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Barra de progreso por pasos con 5 items - contador habilitado (Item 2 activo):
+        </p>
+        <lib-tb-stepper-progress-bar-element id="stepper-progress-bar-1"></lib-tb-stepper-progress-bar-element>
+      </div>
+    </div>
+
+    <!-- Paginator Example -->
+    <div style="margin: 20px 0;">
+      <h3>Paginator Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 900px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Paginador completo con 150 registros - 10 por página (con opciones y dropdown):
+        </p>
+        <lib-tb-paginator-element id="paginator-1"></lib-tb-paginator-element>
+      </div>
+    </div>
+
+    <!-- Card Example -->
+    <div style="margin: 20px 0;">
+      <h3>Card Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 450px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Card completa con imagen, tag, botón header, contenido y footer interactivo:
+        </p>
+        <lib-tb-card-element id="card-1"></lib-tb-card-element>
+      </div>
+    </div>
+
+    <!-- Answer State Example -->
+    <div style="margin: 20px 0;">
+      <h3>Answer State Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 650px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Estado de respuesta 404 con imagen, título, descripción y botón de acción:
+        </p>
+        <lib-tb-answer-state-element id="answer-state-1"></lib-tb-answer-state-element>
+      </div>
+    </div>
+
+    <!-- File Upload Field Example -->
+    <div style="margin: 20px 0;">
+      <h3>File Upload Field Example:</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px; max-width: 650px;">
+        <p style="margin: 5px 0; font-size: 14px; color: #666;">
+          Campo de subida de archivos con drag & drop, validaciones y múltiples formatos:
+        </p>
+        <lib-tb-file-upload-field-element id="file-upload-field-1"></lib-tb-file-upload-field-element>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="module" src="js/app.js"></script>
+    
+  </body>
+</html>
